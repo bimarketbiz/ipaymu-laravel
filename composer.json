@@ -1,0 +1,29 @@
+{
+    "name": "marketbiz/ipaymu-laravel",
+    "description": "This package used for integrate ipaymu to laravel",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Marketbiz\\IPaymuLaravel\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "marketbiz",
+            "email": "bima@marketbiz.net"
+        }
+    ],
+    "require": {
+        "guzzlehttp/guzzle": "^7.0.1"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Marketbiz\\IPaymuLaravel\\IPaymuServiceProvider"
+            ],
+            "aliases" : {
+                "IPaymu": "Marketbiz\\IPaymuLaravel\\Facades\\IPaymu"
+            }
+        }
+    }
+}
